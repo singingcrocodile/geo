@@ -1,0 +1,117 @@
+/* style.css (Clean Fixed Version) */
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR - ALWAYS ON TOP */
+nav {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 15px;
+  text-align: center;
+
+  position: sticky;  /* keeps it at top */
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE BACKGROUNDS */
+.home-bg {
+  background: linear-gradient(to right, #ffe259, #ffa751);
+}
+
+.about-bg {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+}
+
+.contact-bg {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+/* MAIN CONTAINER */
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+p {
+  color: #333;
+}
+
+/* PRODUCT CARDS */
+.product {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  display: inline-block;
+  width: 200px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* BUTTONS */
+button {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* CART BOX */
+#cart {
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* FORM */
+input, textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 10px;
+  border: none;
+}
+
+/* SAFETY FIXES (IMPORTANT) */
+html, body {
+  display: block;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
