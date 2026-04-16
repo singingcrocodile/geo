@@ -1,0 +1,49 @@
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="en" class="home-bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Products</title>
+  <link rel="stylesheet" href="Newstyle.css">
+</head>
+<body>
+
+
+<div class="container">
+  <h1>🌴 Our Products</h1>
+
+  <div class="product">
+    <h3>Product 1</h3>
+    <p>$10</p>
+    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <h3>Product 2</h3>
+    <p>$20</p>
+    <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+  </div>
+</div>
+
+<script>
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function addToCart(name, price) {
+  cart.push({ name, price });
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert('Added to cart!');
+}
+</script>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="product.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+</body>
+</html>
+
+
