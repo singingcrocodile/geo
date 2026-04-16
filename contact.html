@@ -1,0 +1,40 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en" class="contact-bg">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Newstyle.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="product.html">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+<div class="container">
+  <h1>🌺 Contact Us</h1>
+
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="message"></p>
+</div>
+
+<script>
+function submitForm(e) {
+  e.preventDefault();
+  document.getElementById('message').textContent = 'Message sent successfully!';
+}
+</script>
+
+</body>
+</html>
