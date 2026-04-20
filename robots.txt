@@ -1,0 +1,5 @@
+user-agent:*
+allow:/
+disallow:/Newstyle.css
+disallow:/forms
+disallow:/images folder
